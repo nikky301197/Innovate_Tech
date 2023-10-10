@@ -153,7 +153,11 @@
           width: 300px !important;
           height: 300px !important;
         }
+        .form-box{
+        width: 80% !important;
       }
+      }
+      /* very small screen starts here  */
       @media screen and (max-width: 300px) {
         .sec-2-box i {
           font-size: 30px !important;
@@ -221,7 +225,16 @@
           height: 120px !important;
           width: 120px !important;
         }
+        .form-box{
+        width: 80% !important;
       }
+      .form-box h1{
+        font-size: 22px !important;
+      }
+     
+      }
+  /* very small screen code ends here  */
+
       .sec-2-box {
         transition: all 0.3s ease-in-out;
       }
@@ -362,6 +375,14 @@
         content: "Dan Brown \A Marketing ";
         white-space: pre-wrap;
       }
+
+      .form-box button:hover{
+        box-shadow:#3a2a6a 0px 8px 24px !important;
+      
+      }
+    
+      
+
     </style>
   </head>
   <body>
@@ -609,7 +630,7 @@
           </p>
           <button
             type="button  "
-            class="btn"
+            class="btn mt-3  mb-3"
             style="
               background-color: #fc6041;
               height: 50px;
@@ -749,7 +770,7 @@
       class="sec-5 container-fluid mt-5 mb-5 col-12"
       style="background-color: #7dafe3"
     >
-      <div class="row border pt-4 pb-4" style="height: fit-content">
+      <div class="row border pt-1 pb-1" style="height: fit-content">
         <h1
           class="display-4 text-center w-100"
           style="
@@ -768,7 +789,7 @@
     <!-- out team code starts from here  -->
     <div class="sec-6 container-fluid">
       <h1
-        class="display-3 text-center"
+        class="display-4 text-center"
         style="
           font-family: Georgia, 'Times New Roman', Times, serif;
           color: #4a3881;
@@ -816,5 +837,65 @@
       </div>
     </div>
     <!-- out team code ends here  -->
+
+    <section class="sec-7 container-fluid mt-5 mb-5">
+      <div
+        class="row border d-flex flex-column  justify-content-center align-items-center
+        pt-5 pb-5
+        "
+        style="
+          height: fit-content;
+          background-image: url('https://mobirise.com/extensions/techm4/assets/images/background110.jpg');
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+        "
+      >
+        
+
+        <div
+          class="form-box"
+          style="
+            height: fit-content;
+            width: 60%;
+            background-color: rgba(255, 255, 255, 0.75);
+            border-radius: 50px;
+          "> 
+          <h1 class="pt-5 pb-4 text-center "
+          style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+          color: #57468b; "
+          >Get In Touch With Us</h1>
+          
+           <form class="d-flex flex-column align-items-center justify-content-center"
+           style="padding-top: 10px; padding-bottom: 100px;"
+           >
+
+            <div class="form-group col-lg-8 col-10">
+              <input type="text" class="form-control"  aria-describedby="Name" placeholder="Name"
+              style="height: 50px; border: none;"
+              >
+            </div>
+            <div class="form-group col-lg-8 col-10 mt-2">
+              <input type="email" class="form-control"  aria-describedby="emailHelp" placeholder="Email"
+              style="height: 50px; border: none;"
+              >
+            </div>
+
+            <div class="form-group col-lg-8 col-10 mt-2">
+              <input type="password" class="form-control"  aria-describedby="emailHelp" placeholder="Password"
+              style="height: 50px; border: none;"
+              >
+            </div>
+
+            <button type="submit " class="btn btn-primary mt-5"
+            style="background-color: #4a3881; color: white;
+            width: 200px; height: 60px; border: none; font-weight: bold;"
+            >Submit</button>
+           </form>
+        </div>
+        
+        </div>
+
+      </div>
+    </section>
   </body>
 </html>
