@@ -247,19 +247,25 @@
 
       .floating-img {
         animation-name: floating-img;
-        animation-duration: 10s;
+        animation-duration: 5s;
         animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in ;
       }
       @keyframes floating-img {
         0% {
           transform: translate(0, 0px);
         }
+        25% {
+          transform: translate(0, 20px);
+        }
         50% {
-          transform: translate(0, 15px);
+          transform: translate(0, 0px);
+        }
+        75% {
+          transform: translate(0, -20px);
         }
         100% {
-          transform: translate(0, 15px);
+          transform: translate(0, 0px);
         }
       }
       .floating-circle1 {
@@ -433,12 +439,14 @@
                 type="button  "
                 class="btn"
                 style="
-                  background-color: #ff8a73;
+                  background-color: #ff3f19;
                   height: 50px;
                   width: 200px;
                   color: white;
                   font-size: 14px;
+                  font-weight: bold;
                   border-radius: 50px;
+                  box-shadow: rgb(255, 26, 26) 0px 8px 24px;
                 "
               >
                 READ MORE
@@ -448,12 +456,14 @@
                 type="button "
                 class="btn"
                 style="
-                  background-color: #5580ff;
+                  background-color: #2259ff;
+                  font-weight: bold;
                   height: 50px;
                   width: 200px;
                   color: white;
                   font-size: 14px;
                   border-radius: 50px;
+                  box-shadow: rgb(19, 55, 234) 0px 8px 24px;
                 "
               >
                 CONTACT US
@@ -630,7 +640,7 @@
           </p>
           <button
             type="button  "
-            class="btn mt-3  mb-3"
+            class="btn"
             style="
               background-color: #fc6041;
               height: 50px;
@@ -646,10 +656,10 @@
         </div>
 
         <div
-          class="floating-img sec-3-right offset-lg-1 col-lg-4 offset-md-3 col-md-6 col-12 border"
+          class="floating-img sec-3-right offset-lg-1 col-lg-4 offset-md-3 col-md-6 col-12 "
           style="
             background-image: url('https://mobirise.com/extensions/techm4/assets/images/01.jpg');
-            background-size: 100% 100%;
+            background-size: 100% 80%;
             background-repeat: no-repeat;
             border-radius: 20px;
             background-attachment: fixed;
@@ -768,19 +778,19 @@
     <!-- pricing plan code starts from here  -->
     <section
       class="sec-5 container-fluid mt-5 mb-5 col-12"
-      style="background-color: #7dafe3"
+      style="background-color: #a9bbf8"
     >
       <div class="row border pt-1 pb-1" style="height: fit-content">
         <h1
           class="display-4 text-center w-100"
           style="
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif,
               sans-serif;
             letter-spacing: 5px;
             color: white;
           "
         >
-          Pricing Plan
+       Our Team
         </h1>
       </div>
     </section>
@@ -788,15 +798,7 @@
 
     <!-- out team code starts from here  -->
     <div class="sec-6 container-fluid">
-      <h1
-        class="display-4 text-center"
-        style="
-          font-family: Georgia, 'Times New Roman', Times, serif;
-          color: #4a3881;
-        "
-      >
-        Our Team
-      </h1>
+      
       <div class="row team-row p-5">
         <div class="img-box img-box1 col-lg-3 col-md-6 col-12 p-3">
           <img
