@@ -156,6 +156,19 @@
         .form-box{
         width: 80% !important;
       }
+      
+      .block-4:nth-child(n){
+         text-align: center !important;
+      }
+      .social-block-1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      .nav-logo {
+        font-size: 25px !important;
+      }
+     
       }
       /* very small screen starts here  */
       @media screen and (max-width: 300px) {
@@ -392,6 +405,49 @@
     </style>
   </head>
   <body>
+
+<!-- navigation code starts from here  -->
+
+<nav class="col-lg-12 navbar sticky-top  navbar-expand-lg navbar-light py-3 "
+style="background-color: #57468b; padding-left: 50px; ">
+
+<a class="text-white navbar-brand nav-logo "
+  style="font-family: Georgia, 'Times New Roman', Times, serif;font-size: 30px; letter-spacing: 1px; "
+  href="#">Innovate Tech </a>
+<button class="navbar-toggler bg-white" type="button"
+  data-toggle="collapse" data-target="#navbarNav"
+  aria-controls="navbarNav" aria-expanded="false"
+  aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+  <ul class="navbar-nav "
+    style=" font-size: 16px; padding-left: 50px;">
+    <li class=" nav-item active">
+      <a class=" text-white nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+    </li>
+    <li class=" nav-item">
+      <a class=" text-white nav-link" href="#">Services</a>
+    </li>
+    <li class=" nav-item">
+      <a class=" text-white nav-link" href="#">Features</a>
+    </li>
+    <li class="= nav-item dropdown">
+      <a class="text-white nav-link dropdown-toggle  " href="#"
+        id="navbarDropdownMenuLink" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">Products</a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" href="#">Modern Technologies</a>
+        <a class="dropdown-item" href="#">Artificial Intelligence </a>
+        <a class="dropdown-item" href="#">Chat GPT</a>
+      </div>
+    </li>
+  </ul>
+</div>
+</nav>
+<!-- navigation code ends here 
+
+
     <!-- tech company intro code starts from here  -->
     <section>
       <div class="sec-1 container-fluid">
@@ -899,5 +955,70 @@
 
       </div>
     </section>
+
+<footer>
+  <section class="container-fluid  " style="height: fit-content;
+  background-color: #57468B;
+  ">
+    <div class="row   text-white">
+        <div class="block-1 col-lg-3 col-md-6 col-12  d-flex flex-column justify-content-center align-items-md-start align-items-center " style="height: 300px;">
+        <p  style="width: 80%; font-size: 19px; ">We would be happy to answer your questions.</p>
+        <div class="social-block-1 mt-3 w-100 ">   
+          <i class="fa fa-twitter border-none p-3 "
+         style="background-color: #4E3F7D; font-size: 25px;"></i>
+         <i class="fa fa-facebook border-none p-3"
+         style="background-color: #4E3F7D; font-size: 25px;"></i>
+         <i class="fa fa-instagram border-none p-3"
+         style="background-color: #4E3F7D; font-size: 25px;"></i>
+        </div>
+       
+        </div>
+        <div class="block-2 col-lg-3 col-md-6 col-12 
+        d-flex flex-column align-items-md-start  align-items-center justify-content-center
+        " style="height: 300px;">
+        <h4 class=" mb-4"> Contact Info</h4>
+        <p> 
+          1234 Streat Name</p>
+        <p>City , AA 9999</p>
+        <p>innovate@tech.com</p>
+        <p>
+          +91 973927237</p>
+        </div>
+        <div class="block-3 col-lg-3 col-md-6 col-12  d-flex justify-content-center align-items-center " style="height: 300px;">
+        <div class=" d-flex justify-content-center align-items-center "  style="height: 50%; border-radius: 10px;
+        background-color: #4E3F7D;
+        ">
+         <p class="text-center" style=" font-size: 17px;
+         ">
+          Please contact us any time you would have any issue or question.
+         </p>
+          
+        </div>
+        
+        </div>
+        <div class="block-4 col-lg-3 col-md-6 col-12 " style="height: 300px;
+      
+        ">
+        <h5 class="mt-5 " >Support and Download</h5>
+        <p  style="width: 100%; font-size: 17px; ">You can always find our application in Apple Store and Google Play</p>
+        <button class="btn border border-white mt-2 " style=" color: white;  text-align: start;
+        font-weight: bold;
+        height: 50px;
+        "> App Store </button>
+          <button class="btn border border-white mt-2 " style=" color: white; 
+            text-align: start;
+            font-weight: bold;
+          height: 50px;
+          "> 
+           Google Play </button>
+       
+        </div>
+    </div>
+  </section>
+</footer>
+
+<div class="container-fluid"
+style="background-color: #343351; height: 40px;"
+></div>
   </body>
 </html>
